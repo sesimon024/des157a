@@ -4,15 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Link to Styles Sheet and Normalize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    
+    
+    <!--Fonts imported-->
+    <!--Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!--Martian Mono-->
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@800&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <!-- link to style sheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 
 <body>
+    
     <header>
-        <h1>This is my portal page!</h1>
+        <h1>Sofia Simon</h1>
+        <h2 class="heading">DES 157A - Interactive Media II - Winter 2023</h2>
+        <div id="banner">
+            <div>
+                <img src="cloudsAndName.png" alt="graphic of sun and Welcome and the clouds for hover transition" class="bannerImage">
+            </div>
+        </div> <!-- animation with clouds and lightning. In styles.css create rules for the width (1100px) and height (250px) of the banner.  -->
     </header>
 
-    <p><a href="exp1.html">Link to Experiment 1</a></p>
-    
+    <main id="flexingTheColumns">   <!-- STYLING Remove all of the bullets for the lists (liststyletypenone) -->
+
+        <div id="column1">
+            <div id="c1TopSection" class="aSection">
+                <h2>Studio</h2>
+                <ul>
+                    <li><a href="#">Learning Journal</a></li>
+                    <li><a href="#">Mad Libs 2.0</a></li>
+                    <li><a href="#">Every Picture</a></li>
+                    <li class="bottomSelector"><a href="#">Game On!</a></li>
+                </ul>
+            </div>
+            <div id="c1BottomSection" class="aSection">
+                <h2>Experiments</h2>
+                <ul>
+                    <li><a href="exp1.html">Experiment 1</a></li>
+                    <li class="bottomSelector"><a href="#">Experiment 2</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="column2" class="aSection">
+            <h2>R&D</h2>
+            <ul>
+                <li><a href="#">Project Brief</a></li>
+                <li><a href="#">Design Comp</a></li>
+                <li><a href="#">Version 1</a></li>
+                <li class="bottomSelector"><a href="#">Version 2</a></li>
+            </ul>
+        </div>
+
+        <div id="column3" class="aSection">
+            <h2>Final</h2>
+            <ul>
+                <li class="bottomSelector"><a href="#">Final Project</a></li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer> <!-- STYLING flex the footer -->
+        <p>Sofia Simon</p>
+        <address>
+            contact <a href="mailto:&#115;&#101;&#115;&#105;&#109;&#111;&#110;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#115;&#101;&#115;&#105;&#109;&#111;&#110;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a>
+        </address>
+    </footer>
+
 </body>
 </html>
