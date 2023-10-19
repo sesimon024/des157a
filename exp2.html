@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+
+    <style>
+        p{
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Experiment 2</h1>
+
+    <p id="welcomeMessage"></p>
+    <p id="color"></p>
+    
+
+    <script>
+        var userName = prompt('Please enter your name', ''); /* what does the extra space do? */
+
+        var favColor = prompt("What's your favorite color? Choose from: green, blue, red, pink, purple, orange", "");
+
+        var myP = document.querySelector("#welcomeMessage");
+
+
+
+        function changeNameAndColor(p1, p2) {
+            if (favColor === "green" || favColor === "blue" || favColor === "red" || favColor === "pink" || favColor === "purple" || favColor === "orange"){
+                myP.innerHTML = `Welcome ${p1}! :)`;
+                myP.style.color = p2;
+            } else {
+                myP.innerHTML = `Welcome ${p1}! Sorry, but you don't get a color, you didn't select one from the options :(`;
+                myP.style.color = "black";
+            }
+
+        }
+        changeNameAndColor(userName, favColor);
+
+    </script>
+
+</body>
+</html>
