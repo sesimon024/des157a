@@ -54,6 +54,11 @@ h4 {
     margin-top: 30px;
 }
 
+#lightboxes{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
 
 /* --------------------------------------------------------------- from previous --------------------------------------------------------------- */
 
@@ -146,7 +151,7 @@ footer address a{
         text-align: center;
     }
     /* --------------------------------------------------------------- Learning Journal --------------------------------------------------------------- */
-    #flexToColumns {
+    .flexToColumns {
         display: flex;
         /* word-wrap: break-word;
         overflow: auto; */
@@ -155,18 +160,18 @@ footer address a{
         gap: 50px;
     }
     
-    #adjustForColumn {
+    .adjustForColumn {
         width: 46%;
         padding-left: 20px;
 
     }
 
-    #column1Journal{
+    .column1Journal{
         width: 50%;
         padding-left: 20px;
     }
 
-    #column2Journal {
+    .column2Journal {
         width: 50%;
         padding-right: 20px;
 
