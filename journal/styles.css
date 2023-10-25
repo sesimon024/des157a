@@ -55,8 +55,15 @@ h4 {
 }
 
 #lightboxes{
-    margin-bottom: 30px;
     margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+
+#visThinking{
+    margin-bottom: 30px;
+    /* margin-top: 30px; */
 }
 
 
