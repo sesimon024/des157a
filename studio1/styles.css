@@ -1,0 +1,124 @@
+/* COLORS
+
+white #FFEAEC
+purple #302E54
+orange #F07510
+dark orange #AE4D2A
+green #04E824 */
+
+/* img reset */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* PAGE STYLING */
+body{
+    background-color: #302E54;
+    margin-top: 25px;
+}
+
+h1 {
+    font-family: Creepster;
+    color: #FFEAEC;
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* FORM STYLING */
+
+
+form {
+    font-family: Jacques Francois;
+    color: #F07510;
+    font-size: 18px;
+}
+
+label, input {
+    display: block;
+    
+}
+
+input {
+    border-radius: 50px;
+    color: #F07510;
+    background-color: #FFEAEC;
+    padding: 10px;
+    margin: 5px auto 20px auto;
+}
+
+label {
+    text-align: center;
+}
+
+#submitting {
+    /* border-radius: 50px; */
+    color: #FFEAEC;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    margin: 5px;
+    border: none;
+}
+
+#submitting:hover{
+    cursor:pointer;
+}
+
+/* #buttonToSend {
+    display: ;
+} */
+
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+#overlay {
+    background-color: aqua;
+}
+
+
+
+
+/* responsive styling here -------------------------------------------------------- */
+ 
+@media only screen and (min-width: 950px) { 
+
+    h1 {
+        text-align: center;
+        margin: 0;
+        font-size: 55px;
+        margin-left: 20px;
+        margin-right: 20px;
+        letter-spacing: 1px;
+    }
+
+    #columnsToFlexForm {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1000px;
+        gap: 20px;
+    }
+
+    form {
+        font-family: Jacques Francois;
+        color: #F07510;
+        font-size: 22px;
+    }
+
+}
