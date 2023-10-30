@@ -17,13 +17,11 @@ img {
 /* PAGE STYLING */
 body{
     background-color: #302E54;
-    /* margin-top: 25px; */
-    position: relative;                             /* position relative */
 }
 
     /* spider webs positioning */                   /* position absolute */
 #spider2 {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     /* height: 100%; */
@@ -33,8 +31,8 @@ body{
 }
 
 #spider1 {                                          /* position absolute  I NEED HELP WITH POSITIONING*/
-    position: absolute;
-    bottom: -250px;
+    position: fixed;
+    bottom: 0;
     left: 0;
     width: 20%;
     opacity: .3;
@@ -42,17 +40,15 @@ body{
 }
 
 #flexComplete {                                     /* position absolute */
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    transform: translate(-20%, 110%);
+    /* position: absolute; */
+    /* bottom: 0;
+    right: 0; */
+    transform: translate(40%, 0);
 }
 
 #overlay {                                          
     position: absolute;
     transform: translate(-25%,0%);
-
     width: 250px;
     z-index: 3;
     bottom: 0;
@@ -60,10 +56,8 @@ body{
     border-radius: 30px;
     padding: 20px 40px;
     background-color: #AE4D2A;
-
-
     width: 50vw; /* work better for desktop vs. mobile (because of dissappearing bar at bottom) */
-    height: 80vh;
+    height: fit-content;
 }
 
 #crossedBones {
@@ -231,14 +225,23 @@ label {
     }
 
     body {
-        overflow-y: hidden; 
     }
 
     #flexComplete {
-        position: absolute;
-        bottom: -120px;
-        right: 130px;
+        /* position: absolute; */
+        /* bottom: 0px;
+        right: 0px; */
+        transform: translate(20%, 0);
     }
+
+    #spider1{
+        position: absolute;
+    }
+
+    #spider2{
+        position: absolute;
+    }
+    
 
     /* #overlay {                                          position absolute
         position: absolute;
@@ -257,10 +260,10 @@ label {
         position: absolute;
         background-color: #AE4D2A;
         /* opacity: 1; */
-        top: 0;
+        top: 20px;
         left: 0;
         width: 50vw; /* work better for desktop vs. mobile (because of dissappearing bar at bottom) */
-        height: 50vh;
+        height: fit-content;
     
         /* added */
         transition-property: opacity, visibility;
