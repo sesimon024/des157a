@@ -97,7 +97,10 @@
     
 })();
 
-
+document.querySelector('.close').addEventListener('click', function(event){
+    event.preventDefault();
+    document.getElementById("overlay").className = 'hidden'; /* with getElementbyId you don't need the # sign, but query selector you don't */
+});
 
 
 // add a on click event handler to that element id for that div the skeleton
