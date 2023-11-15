@@ -49,9 +49,6 @@ p{
     line-height: 1.3em;
 }
 
-section {
-    /* position: relative; */
-}
 
 
 /* images */
@@ -165,6 +162,12 @@ section {
 
     section {
         display: flex;
+        flex-direction: column;
+        /* gap: 15px; */
+    }
+
+    #photo1Section {
+        margin-left: 10px;
     }
 
     .img1Text, .img2Text, .img3Text, .img4Text, .img5Text {
@@ -193,6 +196,7 @@ section {
 
     main {
         display: flex;
+        gap: 10px;
     }
 
 
