@@ -155,7 +155,7 @@ p{
 /* --------------------------- website design --------------------------- */
 @media only screen and (min-width: 1040px) { 
     body {
-        max-width: 1200px;
+        max-width: 1450px;
         margin: 0 auto;
     } /* i feel like this isn't working */
       
