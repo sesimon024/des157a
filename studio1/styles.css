@@ -1,0 +1,287 @@
+/* COLORS
+
+white #FFEAEC
+purple #302E54
+orange #F07510
+dark orange #AE4D2A
+green #04E824 */
+
+/* img reset */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* PAGE STYLING */
+body{
+    background-color: #302E54;
+}
+
+    /* spider webs positioning */                   /* position absolute */
+#spider2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* height: 100%; */
+    width: 30%;
+    opacity: .3;
+    z-index: 1;
+}
+
+#spider1 {                                          /* position absolute  I NEED HELP WITH POSITIONING*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    opacity: .3;
+    z-index: 1;
+}
+
+#flexComplete {                                     /* position absolute */
+    /* position: absolute; */
+    /* bottom: 0;
+    right: 0; */
+    transform: translate(40%, 0);
+}
+
+#overlay {                                          
+    position: absolute;
+    transform: translate(-25%,0%);
+    width: 250px;
+    z-index: 3;
+    bottom: 0;
+    right: 0;
+    border-radius: 30px;
+    padding: 20px 40px;
+    background-color: #AE4D2A;
+    width: 50vw; /* work better for desktop vs. mobile (because of dissappearing bar at bottom) */
+    height: fit-content;
+}
+
+#crossedBones {
+    width: 17%;
+    position: absolute;
+    right: 20px;
+}
+
+h1 {
+    font-family: Creepster;
+    color: #FFEAEC;
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* FORM STYLING */
+
+
+form {
+    font-family: Jacques Francois;
+    color: #F07510;
+    font-size: 18px;
+    position: relative;
+    z-index: 2;
+}
+
+label, input {
+    display: block;
+    
+}
+
+input {
+    border-radius: 50px;
+    color: #F07510;
+    background-color: #FFEAEC;
+    padding: 10px;
+    margin: 5px auto 20px auto;
+}
+
+label {
+    text-align: center;
+}
+
+#submitting {
+    /* border-radius: 50px; */
+    color: #FFEAEC;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    position: absolute;
+    top: 38px;
+    left: -130px;
+}
+
+#submitting:hover{
+    cursor:pointer;
+}
+
+/* #buttonToSend {
+    display: ;
+} */
+
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+    font-family: Jacques Francois;
+    font-size: 22px;
+    color: #FFEAEC;
+}
+
+
+
+/* #skeletonHand {
+    animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+    animation-delay: 5s;
+    animation-iteration-count: 4;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+} */
+#skeletonHand {
+    animation: shake 12s cubic-bezier(.36,.07,.19,.97) both infinite;
+    /* animation-delay: 3s; */
+}
+
+@keyframes shake {
+    0%, 95% { transform: translate(0, 0) rotate(0deg); }
+    95.5% { transform: translate(1px, 1px) rotate(0deg); }
+    96% { transform: translate(-1px, -2px) rotate(-1deg); }
+    96.5% { transform: translate(-3px, 0px) rotate(1deg); }
+    97% { transform: translate(3px, 2px) rotate(0deg); }
+    97.5% { transform: translate(1px, -1px) rotate(1deg); }
+    98% { transform: translate(-1px, 2px) rotate(-1deg); }
+    98.5% { transform: translate(-3px, 1px) rotate(0deg); }
+    99% { transform: translate(3px, 1px) rotate(-1deg); }
+    99.5% { transform: translate(-1px, -1px) rotate(1deg); }
+    100% { transform: translate(1px, 2px) rotate(0deg); }
+}
+
+
+#overlay #madLib {
+    padding-top: 70px;
+}
+
+
+
+   
+  
+
+
+
+/* responsive styling here -------------------------------------------------------- */
+ 
+@media only screen and (min-width: 950px) { 
+
+    h1 {
+        text-align: center;
+        margin: 0;
+        font-size: 55px;
+        margin-left: 20px;
+        margin-right: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 50px;
+        padding-top: 40px;
+    }
+
+    #columnsToFlexForm {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1000px;
+        gap: 20px;
+    }
+
+    form {
+        font-family: Jacques Francois;
+        color: #F07510;
+        font-size: 22px;
+    }
+
+    /* body {
+    } */
+
+    #flexComplete {
+        /* position: absolute; */
+        /* bottom: 0px;
+        right: 0px; */
+        transform: translate(20%, 0);
+    }
+
+    #spider1{
+        position: absolute;
+    }
+
+    #spider2{
+        position: absolute;
+    }
+    
+
+    /* #overlay {                                          position absolute
+        position: absolute;
+        transform: translate(65%,40%);
+    
+        width: 500px;
+        z-index: 3;
+        top: 0;
+        right: auto;
+        border-radius: 30px;
+        padding: 20px 40px;
+        background-color: #AE4D2A;
+    } */
+
+    #overlay{
+        position: absolute;
+        background-color: #AE4D2A;
+        /* opacity: 1; */
+        top: 20px;
+        left: 0;
+        width: 50vw; /* work better for desktop vs. mobile (because of dissappearing bar at bottom) */
+        height: fit-content;
+    
+        /* added */
+        transition-property: opacity, visibility;
+        transition-duration: .5s;
+        transition-timing-function: ease;
+        transform: translate(39%, 32%);
+    }
+
+    #overlay #madLib {
+        padding-top: 100px;
+    }
+
+    #crossedBones {
+        width: 10%;
+    }
+
+    #crossedBones:hover {
+        cursor: pointer;
+    }
+
+}

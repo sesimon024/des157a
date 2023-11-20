@@ -1,0 +1,58 @@
+/*  */
+
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+
+body {
+    max-width: 1450px;
+    margin: 0 auto;
+    margin-top: 50px;
+} /* i feel like this isn't working */
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    color: #022851;
+    background-color: #FFBF00;
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: #FFBF00;
+    /* color: #022851; */
+    padding: 15px 20px;
+    border-color: transparent;
+    font-size: 26px;
+    /* text-decoration: none; */
+    /* -webkit-text-fill-color: #022851; */
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+    border-bottom: 5px solid #F18A00;
+    border-left: 5px solid #FFD24C;
+    border-right: 5px solid #FFD24C;
+    border-top: 5px solid #FFDF80;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    color: #022851;
+}
+
+button a {
+    color: #022851;
+    text-decoration: none;
+}
+
+
+
+
+@media only screen and (min-width: 950px) { 
+}

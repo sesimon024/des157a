@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs Studio 1.0</title>
+
+    <!-- Link to Styles Sheet and Normalize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    
+    
+    <!--Fonts imported-->
+    <!--Creepster and Jacques Francios-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Jacques+Francois&display=swap" rel="stylesheet">
+
+    
+    <!-- link to style sheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- link to JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>The Eerie Encounter: A Haunting Halloween Tale</h1>
+        <!-- put spider web 2 here from images -->
+        <div></div>
+    </header>
+
+    <main>
+
+        <form id="myform">
+            <div id="columnsToFlexForm">
+                <div id="fromCol1">
+                    <label for="adj1">Provide an Adjective</label>
+                    <input type="text" id="adj1" required>
+        
+                    <label for="adj2">Provide an Adjective</label>
+                    <input type="text" id="adj2" required>
+
+
+        
+                    <label for="adj3">Provide an Adjective</label>
+                    <input type="text" id="adj3" required>
+        
+
+
+                    <label for="adj4">Provide an Adjective</label>
+                    <input type="text" id="adj4" required>
+        
+
+
+                    <label for="adj5">Provide an Adjective</label>
+                    <input type="text" id="adj5" required>
+                </div>
+    
+                <div id="fromCol2">
+                    <label for="adj6">Provide an Adjective</label>
+                    <input type="text" id="adj6" required>
+        
+
+
+                    <label for="adj7">Provide an Adjective</label>
+                    <input type="text" id="adj7" required>
+                    
+
+
+                    <label for="noun1">Provide A Noun</label>
+                    <input type="text" id="noun1" required>
+        
+
+
+                    <label for="noun2">Provide A Noun</label>
+                    <input type="text" id="noun2" required>
+        
+         
+
+                    <label for="noun3">Provide A Plural Noun</label>
+                    <input type="text" id="noun3" required>
+                </div>
+    
+                <div id="fromCol3">
+                    <label for="verb1">Provide a Verb</label>
+                    <input type="text" id="verb1" required>
+        
+           
+
+                    <label for="verb2">Provide a Past Tense Verb</label>
+                    <input type="text" id="verb2" required>
+        
+              
+
+                    <label for="num">Provide a Number</label>
+                    <input type="text" id="num" required>
+        
+               
+
+                    <label for="animal">Provide an Animal</label>
+                    <input type="text" id="animal" required>
+        
+                    <label for="fam">Provide a Family Member</label>
+                    <input type="text" id="fam" required>    
+
+                    <div id="flexComplete">
+                        <input type="submit" value="Complete!" id="submitting">
+                        <!-- try to have it shake the hand when you hover over and when you click on the 'family member' form box after 10 seconds? -->
+                        <img src="images/skeleton.png" alt="img of a skeleton hand pointing to the right" width="250px" id="skeletonHand">
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- HELP! what do i do if i want to do thi -->
+
+        </form>
+
+        <!-- IMAGES: pumpkin, textbox img -->
+        <!-- <div id="buttonToSend">
+            <img src="images/pumpkin.png" alt="pumpkin image">
+            <img src="images/speech-bubble.png" alt="text box with instructions">            
+        </div> -->
+    </main>
+
+    <div>
+        <img src="images/web-2.png" alt="spider web" id="spider2">
+        <img src="images/web-1.png" alt="spider web" id="spider1">
+    </div>
+
+    <!-- <footer>
+
+
+
+    </footer> -->
+
+
+
+
+    <!-- hidden overlay section -->
+    <section id="overlay" class="hidden">
+        <img src="images/crossed-bones.png" alt="close with crossed bones" id="crossedBones" class="close">
+
+        <div id="madLib"></div>
+        
+    </section>
+
+</body>
+</html>
