@@ -3,63 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operation Treat Time</title>
+    <title>Operation Treat Time!</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
-    <!-- Normalize -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-
-    <!-- Font import -->
+    <!--Fonts imported-->
+    <!--Roboto-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-    <!-- styles -->
-    <link rel="stylesheet" href="styles.css">
+    <!--Martian Mono-->
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@800&display=swap" rel="stylesheet">
 
-    <!-- link to JS -->
-    <script src="script.js"></script>
+	<link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Operation Treat Time!</h1>
-    </header>
+    <h1>Operation Treat Time!</h1>
+<!-- overlay -->
 
-    <main>
+    <div id="noPadding">
+        <button id="instructionsButton">View Instructions</button>
+        <div id="overlay" class="hidden">
+            <p>You are on a mission with Cali and Charlie -the K9s of the UC Davis Police Department- to gather at least 30 biscuits without the handler catching you.</p>
+            <p>The player whose turn it is makes a journey of two trips to get biscuits. The total of the biscuits haul is added to the current K9's treat bowl, unless they only got one biscuit on either of their trips, then it means the handler was alerted before you could grab more. If this happens, the next K9 is sent in to try and get more treats.</p>
+            <p>After each set of trips, the current player can choose to make another two trips (assuming they didn't only get one biscuit on one of the trips) or if the K9 player feels that luck is running thin, they can send in their friend and take a well-deserved nap! The first K9 to get 30 biscuits gets to celebrate and eat all the biscuits.</p>
+            <p>Watch out though! If one of the K9s gets two trips with only 1 biscuit each time, the handler catches them and takes away their stash. So don’t do that.</p>
+            <p>Good Luck on your mission!</p>
+            <p id="closeButton">Begin your mission</p>
+        </div>
+    </div>
+
+    
+    <!-- ADDED THIS SECTION -->
+    <div>
         <!-- Image of Cali -->
         <img src="images/cali.png" alt="image of golden lab called Cali" id="cali">
-        <h2 id="caliText">Cali</h2>
-
-        <!-- import JS for images of the Biscuits -->
-        <img src="images/dogBowl1.png" alt="image of bucket of biscuits" id="biscuitBucket1" width="220px">
 
         <!-- image of Charlie -->
         <img src="images/charlie.png" alt="image of Collie Lab Mix called Charlie" id="charlie">
+    </div>
+    
+    <h2 id="caliText">Cali</h2>
 
-        <h2 id="charlieText">Charlie</h2>
+    <!-- import JS for images of the Biscuits -->
+    <img src="images/dogBowl1.png" alt="image of bucket of biscuits" id="biscuitBucket1" width="220px">
+
+    <h2 id="charlieText">Charlie</h2>
+
+    <!-- import JS for images of the Biscuits -->
+    <img src="images/dogBowl1.png" alt="image of bucket of biscuits" id="biscuitBucket2" width="220px">
+
+    <!-- END ADDED -->
+
+    <div id="gamecontrol">
+        <!-- <h2>Start a Game</h2> -->
+        <button id="startgame">Randomly Select the First K9, and Begin the Mission!</button>
+    </div>
+
+    
+
+    <div id="game"></div>
+    <div id="actions"></div>
+    <div id="score"></div>
+
+    <div id="scoreCali"></div>
+    <div id="scoreCharlie"></div>
 
 
-        <!-- import JS for images of the Biscuits -->
-        <img src="images/dogBowl1.png" alt="image of bucket of biscuits" id="biscuitBucket2" width="220px">
-
-        <section>
-            <h2 id="trip1">Trip 1</h2>
-            <!-- insert image of the number of treats, have to ask about if this is dont with JS -->
-        </section>
-
-        <section>
-            <h2 id="trip2">Trip 2</h2>
-            <!-- insert image of the number of treats, have to ask about if this is dont with JS -->
-        </section>
-
-        <Button id="makeMore"><a href="#">Make More Trips!</a></Button>
-        <Button id="nap"><a href="#">Nap Time!</a></Button>
-    </main>
-
-
-    <!-- Overlay text -->
-
-
-
+    
     
 </body>
 </html>

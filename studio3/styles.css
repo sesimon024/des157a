@@ -1,17 +1,97 @@
-/*  */
+div {
+    padding: 20px;
+}
 
-/* 
-font-family: 'Inter', sans-serif;
-font-family: 'Montserrat', sans-serif;
-*/
+#gamecontrol, #score {
+    background-color: #0047ba47;
+    text-align: center;
+    border-radius: 15px;
+}
 
+#gamecontrol {
+    height: 720px;
+    
+}
+
+#game {
+    background-color:#eaeaea;
+}
+#actions {
+    /* background-color: rgb(188, 23, 23); */
+    text-align: center;
+    position: absolute;
+    top: 365px;
+    left: 35%;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    color: #0047BA;
+}
+
+
+
+/* my styling */
+
+#getOne {
+    position: absolute;
+    top: -180px;
+    left: 0px;
+    background-color: #0047BA;
+    padding: 10px;
+    border-radius: 15px;
+    color: #FFBF00;
+    line-height: 40px;
+}
+
+#ohSnap {
+    background-color: #0047BA;
+    padding: 10px;
+    border-radius: 15px;
+    color: #FFBF00;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    color: #0047BA;
+
+    /* -webkit-text-stroke: 1.5px #0047BA; */
+    letter-spacing: 2px;
+}
+
+#theMission {
+    animation: wiggle .5s ease 1;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0);
+    }
+    20% {
+        transform: rotate(-15deg);
+    }
+    80% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+    
+}
+
+#noPadding {
+    padding: 0px;
+}
 
 body {
     max-width: 1512px;
     margin: 0 auto;
     margin-top: 50px;
     background-image: url("images/dogBackground4.png");
-} /* i feel like this isn't working */
+}
 
 h1 {
     font-family: 'Inter', sans-serif;
@@ -24,11 +104,102 @@ h1 {
     margin: auto;
     margin-bottom: 20px;
 
-    /* text-stroke:  */
+    /* -webkit-text-stroke: 3px #FFBF00; */
 
 }
 
-button{
+img {
+    padding-right: 20px;
+}
+
+button {
+    background-color: #0047BA;
+    color: #FFBF00;
+    box-shadow: 0px 5px #022851;  
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+
+    /* z-index: 10; */
+}
+
+button:hover, /* #gamecontrol */ #startgame:hover {
+    cursor: pointer;
+
+    background-color: #022851; 
+}
+
+
+/* the dogs */
+#cali {
+    position: absolute;
+    top: 270px;
+    left: 220px;
+}
+
+#caliText {
+    position: absolute;
+    top: 784px;
+    left: 337px;
+    z-index: 3;
+    color: #022851;
+}
+
+#charlie {
+    position: absolute;
+    top: 270px;
+    left: 1200px;
+}
+
+#charlieText {
+    position: absolute;
+    top: 784px;
+    left: 1348px;
+    z-index: 3; 
+    color: #022851;
+}
+
+#biscuitBucket1 {
+    position: absolute;
+    top: 780px;
+    left: 260px;
+}
+
+#biscuitBucket2 {
+    position: absolute;
+    top: 780px;
+    left: 1285px;
+}
+
+#scoreCali {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: #0047BA;
+    position: absolute;
+    top: 827px;
+    left: 295px;
+}
+
+#scoreCharlie {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: #0047BA;
+    position: absolute;
+    top: 827px;
+    left: 1320px;
+}
+
+#score {
+    position: absolute;
+    top: 525px;
+    left: 36%;
+}
+
+
+/* action items line 130 */
+#rollAgain, #pass, #roll {
     background-color: #FFBF00;
     /* color: #022851; */
     padding: 15px 20px;
@@ -42,101 +213,86 @@ button{
     border-left: 5px solid #FFD24C;
     border-right: 5px solid #FFD24C;
     border-top: 5px solid #FFDF80;
+    color: #0047BA;
 }
 
-button:hover {
-    background-color: #FFBF00;
-
-    border-bottom: 10px solid #F18A00;
-    border-left: 10px solid #FFD24C;
-    border-right: 10px solid #FFD24C;
-    border-top: 10px solid #FFDF80;
+#rollAgain {
+    margin-right: 20px;
+    
 }
 
-h2 {
-    font-size: 30px;
-    font-family: 'Inter', sans-serif;
-    color: #022851;
+#actions #roll { /* need help with positioning this */
+    /* top: 20px; */
 }
 
-button a {
-    color: #022851;
-    text-decoration: none;
-}
-
-img {
+#game {
+    max-width: fit-content;
+    background-color: transparent;
     position: absolute;
-}
-
-#cali {
-    top: 165px;
-    left: 80px;
-}
-
-#caliText {
-    position: absolute;
-    top: 702px;
-    left: 230px;
+    top: 610px;
+    left: 39.35%;
+    text-align: center;
+    /* font-family: 'Montserrat', sans-serif;
+    font-size: 18px; */
     z-index: 3;
 }
 
-#charlie {
-    top: 165px;
-    left: 1100px;
-}
 
-#charlieText {
+/* overlay */
+#overlay{
     position: absolute;
-    top: 702px;
-    left: 1253px;
-    z-index: 3; 
+    background-color: #FFBF00;
+    /* opacity: 1; */
+    top: -141px;
+    left: 65px;
+    width: 50vw; /* work better for desktop vs. mobile (because of dissappearing bar at bottom) */
+    height: fit-content;
+
+    /* added */
+    /* transition: transform 0.5s ease-in-out; */
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transform: translate(39%, 32%);
+
+    border-radius: 15px;
 }
 
-#trip1 {
-    display: block;
-    position: absolute;
-    top: 165px;
-    left: 512px;
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    font-size: 22px;
+    color: #FFEAEC;
 }
 
-
-#trip2 {
-    display: block;
-    position: absolute;
-    top: 165px;
-    left: 895px;
+.showing {
+    visibility: visible;
+    opacity: 1;
+    font-size: 22px;
+    color: #FFEAEC;
+    z-index: 10;
 }
 
+#closeButton {
+    text-align: center;
+    color: #022851;
+    padding: 15px 10px;
+    margin: auto;
 
-/* #moreTripsButton {
-    top: ;
-    left: ;
-} */
-
-#biscuitBucket1 {
-    top: 700px;
-    left: 150px;
+    /* animation-duration: 2s ease; */
 }
 
-#biscuitBucket2 {
-    top: 700px;
-    left: 1190px;
+#closeButton:hover {
+    text-align: right;
+    color: #FFDF80;
+
+    background-color: #0047BA;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 15px 25px;
+    max-width: fit-content;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    
 }
-
-
-#makeMore {
-    display: block;
-    position: absolute;
-    top: 470px;
-    left: 415px;
-}
-
-#nap {
-    display: block;
-    position: absolute;
-    top: 470px;
-    left: 850px;
-}
-
-/* @media only screen and (min-width: 950px) { 
-} */

@@ -1,0 +1,158 @@
+/*  */
+
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+/* ADDED OVERLAY STUFF */
+#overlay {                                          
+    position: absolute;
+    transform: translate(-25%,0%);
+    width: 250px;
+    z-index: 3;
+    bottom: 0;
+    right: 0;
+    border-radius: 30px;
+    padding: 20px 40px;
+    background-color: #AE4D2A;
+    width: 50vw; /* work better for desktop vs. mobile (because of dissappearing bar at bottom) */
+    height: fit-content;
+}
+
+
+
+body {
+    max-width: 1512px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-image: url("images/dogBackground4.png");
+} /* i feel like this isn't working */
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    color: #022851;
+    background-color: #FFBF00;
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: 20px;
+
+    /* text-stroke:  */
+
+}
+
+button{
+    background-color: #FFBF00;
+    /* color: #022851; */
+    padding: 15px 20px;
+    border-color: transparent;
+    font-size: 26px;
+    /* text-decoration: none; */
+    /* -webkit-text-fill-color: #022851; */
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+    border-bottom: 5px solid #F18A00;
+    border-left: 5px solid #FFD24C;
+    border-right: 5px solid #FFD24C;
+    border-top: 5px solid #FFDF80;
+}
+
+button:hover {
+    background-color: #FFBF00;
+
+    border-bottom: 10px solid #F18A00;
+    border-left: 10px solid #FFD24C;
+    border-right: 10px solid #FFD24C;
+    border-top: 10px solid #FFDF80;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    color: #022851;
+}
+
+button a {
+    color: #022851;
+    text-decoration: none;
+}
+
+img {
+    position: absolute;
+}
+
+#cali {
+    top: 165px;
+    left: 80px;
+}
+
+#caliText {
+    position: absolute;
+    top: 702px;
+    left: 230px;
+    z-index: 3;
+}
+
+#charlie {
+    top: 165px;
+    left: 1100px;
+}
+
+#charlieText {
+    position: absolute;
+    top: 702px;
+    left: 1253px;
+    z-index: 3; 
+}
+
+#trip1 {
+    display: block;
+    position: absolute;
+    top: 165px;
+    left: 512px;
+}
+
+
+#trip2 {
+    display: block;
+    position: absolute;
+    top: 165px;
+    left: 895px;
+}
+
+
+/* #moreTripsButton {
+    top: ;
+    left: ;
+} */
+
+#biscuitBucket1 {
+    top: 700px;
+    left: 150px;
+}
+
+#biscuitBucket2 {
+    top: 700px;
+    left: 1190px;
+}
+
+
+#makeMore {
+    display: block;
+    position: absolute;
+    top: 470px;
+    left: 415px;
+}
+
+#nap {
+    display: block;
+    position: absolute;
+    top: 470px;
+    left: 850px;
+}
+
+/* @media only screen and (min-width: 950px) { 
+} */
