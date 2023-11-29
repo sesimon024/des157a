@@ -221,9 +221,9 @@ button:hover, /* #gamecontrol */ #startgame:hover {
     
 }
 
-#actions #roll { /* need help with positioning this */
-    /* top: 20px; */
-}
+/* #actions #roll { /* need help with positioning this
+    top: 20px;
+} */
 
 #game {
     max-width: fit-content;
