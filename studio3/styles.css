@@ -7,9 +7,10 @@ font-family: 'Montserrat', sans-serif;
 
 
 body {
-    max-width: 1450px;
+    max-width: 1512px;
     margin: 0 auto;
     margin-top: 50px;
+    background-image: url("images/dogBackground4.png");
 } /* i feel like this isn't working */
 
 h1 {
@@ -22,6 +23,9 @@ h1 {
     border-radius: 15px;
     margin: auto;
     margin-bottom: 20px;
+
+    /* text-stroke:  */
+
 }
 
 button{
@@ -40,6 +44,15 @@ button{
     border-top: 5px solid #FFDF80;
 }
 
+button:hover {
+    background-color: #FFBF00;
+
+    border-bottom: 10px solid #F18A00;
+    border-left: 10px solid #FFD24C;
+    border-right: 10px solid #FFD24C;
+    border-top: 10px solid #FFDF80;
+}
+
 h2 {
     font-size: 30px;
     font-family: 'Inter', sans-serif;
@@ -51,8 +64,79 @@ button a {
     text-decoration: none;
 }
 
-
-
-
-@media only screen and (min-width: 950px) { 
+img {
+    position: absolute;
 }
+
+#cali {
+    top: 165px;
+    left: 80px;
+}
+
+#caliText {
+    position: absolute;
+    top: 702px;
+    left: 230px;
+    z-index: 3;
+}
+
+#charlie {
+    top: 165px;
+    left: 1100px;
+}
+
+#charlieText {
+    position: absolute;
+    top: 702px;
+    left: 1253px;
+    z-index: 3; 
+}
+
+#trip1 {
+    display: block;
+    position: absolute;
+    top: 165px;
+    left: 512px;
+}
+
+
+#trip2 {
+    display: block;
+    position: absolute;
+    top: 165px;
+    left: 895px;
+}
+
+
+/* #moreTripsButton {
+    top: ;
+    left: ;
+} */
+
+#biscuitBucket1 {
+    top: 700px;
+    left: 150px;
+}
+
+#biscuitBucket2 {
+    top: 700px;
+    left: 1190px;
+}
+
+
+#makeMore {
+    display: block;
+    position: absolute;
+    top: 470px;
+    left: 415px;
+}
+
+#nap {
+    display: block;
+    position: absolute;
+    top: 470px;
+    left: 850px;
+}
+
+/* @media only screen and (min-width: 950px) { 
+} */
