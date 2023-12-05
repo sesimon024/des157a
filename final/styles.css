@@ -38,3 +38,10 @@ p {
     color: #1e555c;
     text-align: justify;
 }
+
+img {
+    display: block;
+    max-width: 600px;
+    height: 100%;
+    margin: auto;
+}
